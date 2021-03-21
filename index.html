@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+        <div class="header">
+            <div class="logo">
+                <img href="#" src="assets/product_images/images-removebg-preview.png" alt="">
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a class="active" href="#"><b>Home</b></a></li>
+                    <li><a href="Products"><b>About</b></a></li>
+                    <li><a href="#contact"><b>Products</b></a></li>
+                    <li><a href="#about"><b>Contact</b></a></li>
+                </ul>
+                  
+            </div>
+        </div>
+        <div class="slider">
+            <img src="assets/product_images/slider-01-1903x820 (1)-1903x820.jpg" alt="">
+        </div>
+        <br>
+        <br>
+        <div class="main_content">
+            <h1 align="center"><b>Our Products</b></h1>
+        </div>
+        <br>
+        <div class="product_category">
+            <ul>
+                <li><div onclick="showProduct('fashion');" class="tabStyle" id="fashion"></div></li>
+                <li><div onclick="showProduct('Mobiles');" class="tabStyle" id="mobiles"></div></li>
+                <li><div onclick="showProduct('Home & Furniture');" class="tabStyle" id="homeFurniture"></div></li>
+                <li><div onclick="showProduct('Electronics');" class="tabStyle" id="electronics"></div></li>
+                <li><div onclick="showProduct('Grocery');" class="tabStyle" id="grocery"></div></li>
+            </ul>
+         </div>
+         <br>
+         <div id="productList">
+           
+         </div>
+        <br>
+
+</body>
+<script type="text/javascript" src="js/products.js"></script>
+</html>
