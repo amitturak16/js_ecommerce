@@ -9,7 +9,7 @@ const productData = [
         price: 400,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/casual_shirt.png"
+        productUrl: "assets/product_images/casual_shirt.png"
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ const productData = [
         price: 500,
         shippingInformation: 'shift in Three days',
         reviews: '***',
-        productUrl: "../assets/product_images/46314c12475892f4d9400f2cf3b1b72d.jpg"
+        productUrl: "assets/product_images/46314c12475892f4d9400f2cf3b1b72d.jpg"
     },
     {
         id: 3,
@@ -31,7 +31,7 @@ const productData = [
         price: 700,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/download.jpg"
+        productUrl: "assets/product_images/download.jpg"
     },
     {
         id: 4,
@@ -42,7 +42,7 @@ const productData = [
         price: 300,
         shippingInformation: 'shift tomarrow',
         reviews: '**',
-        productUrl: "../assets/product_images/images.jpg"
+        productUrl: "assets/product_images/images.jpg"
     },
     {
         id: 4,
@@ -53,7 +53,7 @@ const productData = [
         price: 200,
         shippingInformation: 'shift within 2 days',
         reviews: '****',
-        productUrl: "../assets/product_images/images14.jpg"
+        productUrl: "assets/product_images/images14.jpg"
     },
     {
         id: 5,
@@ -64,7 +64,7 @@ const productData = [
         price: 190,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/yellow-round-necked-t-shirt-500x500-500x500.png"
+        productUrl: "assets/product_images/yellow-round-necked-t-shirt-500x500-500x500.png"
     },
     {
         id: 5,
@@ -75,7 +75,7 @@ const productData = [
         price: 800,
         shippingInformation: 'shift Today',
         reviews: '*****',
-        productUrl: "../assets/product_images/unnamed.png"
+        productUrl: "assets/product_images/unnamed.png"
     },
     {
         id: 6,
@@ -86,7 +86,7 @@ const productData = [
         price: 690,
         shippingInformation: 'shift monday',
         reviews: '****',
-        productUrl: "../assets/product_images/formalpant.jpg"
+        productUrl: "assets/product_images/formalpant.jpg"
     },
     {
         id: 7,
@@ -97,7 +97,7 @@ const productData = [
         price: 250,
         shippingInformation: 'shift wednsday',
         reviews: '****',
-        productUrl: "../assets/product_images/download5.jpg"
+        productUrl: "assets/product_images/download5.jpg"
     },
     {
         id: 8,
@@ -108,7 +108,7 @@ const productData = [
         price: 1200,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/blazers-500x500.jpg"
+        productUrl: "assets/product_images/blazers-500x500.jpg"
     },
     {
         id: 9,
@@ -119,7 +119,7 @@ const productData = [
         price: 1289,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/images15.jpg"
+        productUrl: "assets/product_images/images15.jpg"
     },
     {
         id: 10,
@@ -130,7 +130,7 @@ const productData = [
         price: 500,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/images8.jpg"
+        productUrl: "assets/product_images/images8.jpg"
     },
     {
         id: 11,
@@ -141,7 +141,7 @@ const productData = [
         price: 280,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/jeanswoman.jpg"
+        productUrl: "assets/product_images/jeanswoman.jpg"
     },
     {
         id: 12,
@@ -152,7 +152,7 @@ const productData = [
         price: 760,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/images11.jpg"
+        productUrl: "assets/product_images/images11.jpg"
     },
     {
         id: 13,
@@ -163,7 +163,7 @@ const productData = [
         price: 800,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/download12.jpg"
+        productUrl: "assets/product_images/download12.jpg"
     },
     {
         id: 14,
@@ -174,7 +174,7 @@ const productData = [
         price: 200,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/images13.jpg"
+        productUrl: "assets/product_images/images13.jpg"
     },
     {
         id: 15,
@@ -185,7 +185,7 @@ const productData = [
         price: 370,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/download14.jpg"
+        productUrl: "assets/product_images/download14.jpg"
     },
     {
         id: 16,
@@ -196,7 +196,7 @@ const productData = [
         price: 100,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/sportgirls.jpg"
+        productUrl: "assets/product_images/sportgirls.jpg"
     },
 
 
@@ -211,7 +211,7 @@ const productData = [
         price: 10000,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/note7.jpg"
+        productUrl: "assets/product_images/note7.jpg"
     },
     {
         id: 18,
@@ -222,7 +222,7 @@ const productData = [
         price: 11000,
         shippingInformation: 'shift in Three days',
         reviews: '***',
-        productUrl: "../assets/product_images/note7pro.jpg"
+        productUrl: "assets/product_images/note7pro.jpg"
     },
     {
         id: 18,
@@ -233,7 +233,7 @@ const productData = [
         price: 13000,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/note8.jpg"
+        productUrl: "assets/product_images/note8.jpg"
     },
     
     {
@@ -245,7 +245,7 @@ const productData = [
         price: 13900,
         shippingInformation: 'shift within 2 days',
         reviews: '****',
-        productUrl: "../assets/product_images/note8pro.jpg"
+        productUrl: "assets/product_images/note8pro.jpg"
     },
     {
         id: 20,
@@ -256,7 +256,7 @@ const productData = [
         price: 19000,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/note9.jpg"
+        productUrl: "assets/product_images/note9.jpg"
     },
     {
         id: 21,
@@ -267,7 +267,7 @@ const productData = [
         price: 9000,
         shippingInformation: 'shift monday',
         reviews: '****',
-        productUrl: "../assets/product_images/note9pro.jpg"
+        productUrl: "assets/product_images/note9pro.jpg"
     },
     {
         id: 21,
@@ -278,7 +278,7 @@ const productData = [
         price: 13700,
         shippingInformation: 'shift wednsday',
         reviews: '****',
-        productUrl: "../assets/product_images/miA1.jpg"
+        productUrl: "assets/product_images/miA1.jpg"
     },
     {
         id: 22,
@@ -289,7 +289,7 @@ const productData = [
         price: 13400,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/miA2.jpg"
+        productUrl: "assets/product_images/miA2.jpg"
     },
     {
         id: 23,
@@ -300,7 +300,7 @@ const productData = [
         price: 11700,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/miA3.jpg"
+        productUrl: "assets/product_images/miA3.jpg"
     },
     {
         id: 24,
@@ -311,7 +311,7 @@ const productData = [
         price: 12600,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/realme7i.jpg"
+        productUrl: "assets/product_images/realme7i.jpg"
     },
     {
         id: 25,
@@ -322,7 +322,7 @@ const productData = [
         price: 17000,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/nazra.jpg"
+        productUrl: "assets/product_images/nazra.jpg"
     },
     {
         id: 26,
@@ -333,7 +333,7 @@ const productData = [
         price: 18500,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/nazra1.jpg"
+        productUrl: "assets/product_images/nazra1.jpg"
     },
     {
         id: 27,
@@ -344,7 +344,7 @@ const productData = [
         price: 16900,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/nazra3.jpg"
+        productUrl: "assets/product_images/nazra3.jpg"
     },
     {
         id: 28,
@@ -355,7 +355,7 @@ const productData = [
         price: 16000,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/nazra4.jpg"
+        productUrl: "assets/product_images/nazra4.jpg"
     },
     {
         id: 29,
@@ -366,7 +366,7 @@ const productData = [
         price: 12500,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/nazra5.jpg"
+        productUrl: "assets/product_images/nazra5.jpg"
     },
     {
         id: 30,
@@ -377,7 +377,7 @@ const productData = [
         price: 12700,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/poco.jpg"
+        productUrl: "assets/product_images/poco.jpg"
     },
 
 
@@ -392,7 +392,7 @@ const productData = [
         price: '12000',
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/bed1.jpg"
+        productUrl: "assets/product_images/bed1.jpg"
     },
     {
         id: 32,
@@ -402,7 +402,7 @@ const productData = [
         price: 13000,
         shippingInformation: 'shift in Three days',
         reviews: '***',
-        productUrl: "../assets/product_images/dining.jpg"
+        productUrl: "assets/product_images/dining.jpg"
     },
     {
         id: 33,
@@ -412,7 +412,7 @@ const productData = [
         price: 17000,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/sofas1.jpg"
+        productUrl: "assets/product_images/sofas1.jpg"
     },
     {
         id: 34,
@@ -422,7 +422,7 @@ const productData = [
         price: 11500,
         shippingInformation: 'shift tomarrow',
         reviews: '**',
-        productUrl: "../assets/product_images/sofas.jpg"
+        productUrl: "assets/product_images/sofas.jpg"
     },
  
  
@@ -434,7 +434,7 @@ const productData = [
         price: 800,
         shippingInformation: 'shift Today',
         reviews: '*****',
-        productUrl: "../assets/product_images/chaire.jpg"
+        productUrl: "assets/product_images/chaire.jpg"
     },
     {
         id: 36,
@@ -444,7 +444,7 @@ const productData = [
         price: 6390,
         shippingInformation: 'shift monday',
         reviews: '****',
-        productUrl: "../assets/product_images/table1.jpg"
+        productUrl: "assets/product_images/table1.jpg"
     },
     {
         id: 37,
@@ -454,7 +454,7 @@ const productData = [
         price: 2250,
         shippingInformation: 'shift wednsday',
         reviews: '****',
-        productUrl: "../assets/product_images/study.jpg"
+        productUrl: "assets/product_images/study.jpg"
     },
     {
         id: 38,
@@ -464,7 +464,7 @@ const productData = [
         price: 12200,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/door.jpg"
+        productUrl: "assets/product_images/door.jpg"
     },
     {
         id: 39,
@@ -474,7 +474,7 @@ const productData = [
         price: 11289,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/window.jpg"
+        productUrl: "assets/product_images/window.jpg"
     },
     {
         id: 40,
@@ -484,7 +484,7 @@ const productData = [
         price: 11500,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/WARDROBES.jpg"
+        productUrl: "assets/product_images/WARDROBES.jpg"
     },
     {
         id: 41,
@@ -494,7 +494,7 @@ const productData = [
         price: 280,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/ShoeRacks.jpg"
+        productUrl: "assets/product_images/ShoeRacks.jpg"
     },
     {
         id: 42,
@@ -504,7 +504,7 @@ const productData = [
         price: 22760,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/EndTables.jpg"
+        productUrl: "assets/product_images/EndTables.jpg"
     },
     {
         id: 43,
@@ -514,7 +514,7 @@ const productData = [
         price: 11800,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/stool.jpg"
+        productUrl: "assets/product_images/stool.jpg"
     },
     {
         id: 44,
@@ -524,7 +524,7 @@ const productData = [
         price: 200,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/sleeper.jpg"
+        productUrl: "assets/product_images/sleeper.jpg"
     },
     {
         id: 45,
@@ -534,7 +534,7 @@ const productData = [
         price: 3270,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/nuevo.jpg"
+        productUrl: "assets/product_images/nuevo.jpg"
     },
     {
         id: 46,
@@ -544,7 +544,7 @@ const productData = [
         price: 11100,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/SantiagoBed.jpg"
+        productUrl: "assets/product_images/SantiagoBed.jpg"
     },
 
 
@@ -560,7 +560,7 @@ const productData = [
         price: 1400,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/Dell1.jpg"
+        productUrl: "assets/product_images/Dell1.jpg"
     },
     {
         id: 48,
@@ -570,7 +570,7 @@ const productData = [
         price: 1300,
         shippingInformation: 'shift in Three days',
         reviews: '***',
-        productUrl: "../assets/product_images/router.jpg"
+        productUrl: "assets/product_images/router.jpg"
     },
     {
         id: 49,
@@ -581,7 +581,7 @@ const productData = [
         price: 4405,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/router2.jpg"
+        productUrl: "assets/product_images/router2.jpg"
     },
    
     {
@@ -593,7 +593,7 @@ const productData = [
         price: 829,
         shippingInformation: 'shift within 2 days',
         reviews: '****',
-        productUrl: "../assets/product_images/ducting.jpg"
+        productUrl: "assets/product_images/ducting.jpg"
     },
  
     {
@@ -604,7 +604,7 @@ const productData = [
         price: 34000,
         shippingInformation: 'shift Today',
         reviews: '*****',
-        productUrl: "../assets/product_images/dell2.jpg"
+        productUrl: "assets/product_images/dell2.jpg"
     },
     {
         id: 52,
@@ -614,7 +614,7 @@ const productData = [
         price: 40690,
         shippingInformation: 'shift monday',
         reviews: '****',
-        productUrl: "../assets/product_images/dell4.jpg"
+        productUrl: "assets/product_images/dell4.jpg"
     },
     {
         id: 53,
@@ -625,7 +625,7 @@ const productData = [
         price: 33350,
         shippingInformation: 'shift wednsday',
         reviews: '****',
-        productUrl: "../assets/product_images/hp1.jpg"
+        productUrl: "assets/product_images/hp1.jpg"
     },
     {
         id: 54,
@@ -636,7 +636,7 @@ const productData = [
         price: 49000,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/hp2.jpg"
+        productUrl: "assets/product_images/hp2.jpg"
     },
     {
         id: 55,
@@ -647,7 +647,7 @@ const productData = [
         price: 78000,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/hp3.jpg"
+        productUrl: "assets/product_images/hp3.jpg"
     },
     {
         id: 56,
@@ -657,7 +657,7 @@ const productData = [
         price: 25500,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/ac.jpg"
+        productUrl: "assets/product_images/ac.jpg"
     },
     {
         id: 57,
@@ -667,7 +667,7 @@ const productData = [
         price: 23280,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/lcd.jpg"
+        productUrl: "assets/product_images/lcd.jpg"
     },
     {
         id: 58,
@@ -678,7 +678,7 @@ const productData = [
         price: 32000,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/led.jpg"
+        productUrl: "assets/product_images/led.jpg"
     },
     {
         id: 59,
@@ -688,7 +688,7 @@ const productData = [
         price: 1800,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/fan.jpg"
+        productUrl: "assets/product_images/fan.jpg"
     },
     {
         id: 60,
@@ -698,7 +698,7 @@ const productData = [
         price: 1200,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/fan2.jpg"
+        productUrl: "assets/product_images/fan2.jpg"
     },
     {
         id: 61,
@@ -709,7 +709,7 @@ const productData = [
         price: 370,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/cooler.jpg"
+        productUrl: "assets/product_images/cooler.jpg"
     },
     {
         id: 62,
@@ -720,7 +720,7 @@ const productData = [
         price: 1100,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/ledlight.jpg"
+        productUrl: "assets/product_images/ledlight.jpg"
     },
 
 
@@ -738,7 +738,7 @@ const productData = [
         price: 400,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/rice.jpg"
+        productUrl: "assets/product_images/rice.jpg"
     },
     {
         id: 64,
@@ -748,7 +748,7 @@ const productData = [
         price: 500,
         shippingInformation: 'shift in Three days',
         reviews: '***',
-        productUrl: "../assets/product_images/pasta.jpg"
+        productUrl: "assets/product_images/pasta.jpg"
     },
     {
         id: 65,
@@ -758,7 +758,7 @@ const productData = [
         price: 100,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/sos.jpg"
+        productUrl: "assets/product_images/sos.jpg"
     },
    
     {
@@ -769,7 +769,7 @@ const productData = [
         price: 200,
         shippingInformation: 'shift within 2 days',
         reviews: '****',
-        productUrl: "../assets/product_images/mustard.jpg"
+        productUrl: "assets/product_images/mustard.jpg"
     },
     
     {
@@ -780,7 +780,7 @@ const productData = [
         price: 800,
         shippingInformation: 'shift Today',
         reviews: '*****',
-        productUrl: "../assets/product_images/sos2.jpg"
+        productUrl: "assets/product_images/sos2.jpg"
     },
     {
         id: 68,
@@ -790,7 +790,7 @@ const productData = [
         price: 290,
         shippingInformation: 'shift monday',
         reviews: '****',
-        productUrl: "../assets/product_images/vinegar.jpg"
+        productUrl: "assets/product_images/vinegar.jpg"
     },
     {
         id: 69,
@@ -800,7 +800,7 @@ const productData = [
         price: 250,
         shippingInformation: 'shift wednsday',
         reviews: '****',
-        productUrl: "../assets/product_images/nuts.jpg"
+        productUrl: "assets/product_images/nuts.jpg"
     },
     {
         id: 70,
@@ -810,7 +810,7 @@ const productData = [
         price: 1200,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/sos.jpg"
+        productUrl: "assets/product_images/sos.jpg"
     },
     {
         id: 71,
@@ -820,7 +820,7 @@ const productData = [
         price: 1289,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/dahi.jpg"
+        productUrl: "assets/product_images/dahi.jpg"
     },
     {
         id: 72,
@@ -830,7 +830,7 @@ const productData = [
         price: 500,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/candid.jpg"
+        productUrl: "assets/product_images/candid.jpg"
     },
     {
         id: 73,
@@ -840,7 +840,7 @@ const productData = [
         price: 280,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/bis.jpg"
+        productUrl: "assets/product_images/bis.jpg"
     },
     {
         id: 74,
@@ -850,7 +850,7 @@ const productData = [
         price: 760,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/penault.jpg"
+        productUrl: "assets/product_images/penault.jpg"
     },
     {
         id: 75,
@@ -860,7 +860,7 @@ const productData = [
         price: 800,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/chocolate.jpg"
+        productUrl: "assets/product_images/chocolate.jpg"
     },
     {
         id: 76,
@@ -870,7 +870,7 @@ const productData = [
         price: '80',
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/paneer.jpg"
+        productUrl: "assets/product_images/paneer.jpg"
     },
     {
         id: 77,
@@ -880,7 +880,7 @@ const productData = [
         price: 370,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/face.jpg"
+        productUrl: "assets/product_images/face.jpg"
     },
     {
         id: 78,
@@ -890,7 +890,7 @@ const productData = [
         price: 100,
         shippingInformation: 'shift Today',
         reviews: '****',
-        productUrl: "../assets/product_images/colgate.jpg"
+        productUrl: "assets/product_images/colgate.jpg"
     }
 
 ];
