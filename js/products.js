@@ -895,6 +895,8 @@ const productData = [
 
 ];
 
+
+
 function handleOnTabChange(){
   
     let textFashion = 'FASHION';
@@ -941,44 +943,71 @@ function handleOnTabChange(){
 
 handleOnTabChange();
 
+const currentProducts = [];
+
+
 function showProduct(category)
 {
     //debugger;
-    var parent = document.getElementById('productList');
-    parent.innerHTML = '';
-
+    
     for (i=0; i<productData.length; i++)
     {  
         if(productData[i].productCategory === category)
-        {
-            var newChild = `<div class="product_img"><img src=`+productData[i].productUrl+` alt=""></div>`;
+       
+        { 
+            // var newChild = `<div class="product_img"><img src=`+productData[i].productUrl+` alt=""></div>`;
+            // parent.insertAdjacentHTML('beforeend', newChild);
+            // var newChild1 = `<div class="child1">
+
+            //     <h4>`+productData[i].productName+`</h4>
+            //     <h6>sizes avilable: `+productData[i].size+`<h6>
+            //      `+productData[i].color+` in color<br>
+            //     <h5>₹`+productData[i].price+` Save (15%)<h5>
+            //     `+productData[i].shippingInformation+`
+            //     <h1>`+productData[i].reviews+`</h1><br>
+            //     </div>`;
+            //     parent.insertAdjacentHTML('beforeend', newChild1)
+               currentProducts.push(productData[i]);
+        }   //end of if
+    } //end of loop
+    drawProducts();
+} //end of function
+showProduct('fashion');
+
+function drawProducts(){
+    var parent = document.getElementById('productList');
+    parent.innerHTML = '';
+
+    for (i=0; i<currentProducts.length; i++)
+    { 
+    var newChild = `<div class="product_img"><img src=`+currentProducts[i].productUrl+` alt=""></div>`;
             parent.insertAdjacentHTML('beforeend', newChild);
             var newChild1 = `<div class="child1">
 
-                <h4>`+productData[i].productName+`</h4>
-                <h6>sizes avilable: `+productData[i].size+`<h6>
-                 `+productData[i].color+` in color<br>
-                <h5>₹`+productData[i].price+` Save (15%)<h5>
-                `+productData[i].shippingInformation+`
-                <h1>`+productData[i].reviews+`</h1><br>
+                <h4>`+currentProducts[i].productName+`</h4>
+                <h6>sizes avilable: `+currentProducts[i].size+`<h6>
+                 `+currentProducts[i].color+` in color<br>
+                <h5>₹`+currentProducts[i].price+` Save (15%)<h5>
+                `+currentProducts[i].shippingInformation+`
+                <h1>`+currentProducts[i].reviews+`</h1><br>
                 </div>`;
                 parent.insertAdjacentHTML('beforeend', newChild1)
-    
-        }   //end of if
-    } //end of loop
-} //end of function
 
+          
+            } //end of loop
+    } //end of function
 
-showProduct('fashion');
 
 
 
 function byPrice(){
-productData.sort((a,b) => (a.price > b.price ? 1 : -1 ));
+currentProducts.sort((a,b) => (a.price > b.price ? 1 : -1 ));
+drawProducts();
 }
 
 function byName(){
-    productData.sort((a,b) => a.productName > b.productName ? 1 : -1);
+currentProducts.sort((a,b) => a.productName > b.productName ? 1 : -1);
+drawProducts();
 }
 
 
