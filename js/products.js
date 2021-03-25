@@ -3,10 +3,10 @@ const productData = [
         id: 1,
         productCategory: 'fashion',
         productName: `Tryme Fashion
-        Men's Regular Fit Casual Shirt`,
+        Men's Regular Casual Shirt`,
         size: 'xl',
         color: 'black',
-        price: 400,
+        price: 900,
         shippingInformation: 'shift Today',
         reviews: '****',
         productUrl: "assets/product_images/casual_shirt.png"
@@ -14,7 +14,7 @@ const productData = [
     {
         id: 2,
         productCategory: 'fashion',
-        productName: `Mens' Shirts, Digital Printed Half Sleeves Shirts for Men, Rayon`,
+        productName: `Mens' Shirts, Digital Printed Half Sleeves Shirts for Men`,
         size: 'xxl',
         color: 'red',
         price: 500,
@@ -208,7 +208,7 @@ const productData = [
         productName: 'redmi note7',
         size: 5.5,
         color: 'black',
-        price: 10000,
+        price: 17000,
         shippingInformation: 'shift Today',
         reviews: '****',
         productUrl: "assets/product_images/note7.jpg"
@@ -242,7 +242,7 @@ const productData = [
         productName: 'redmi note8 pro',
         size: 5.5,
         color: 'black',
-        price: 13900,
+        price: 10900,
         shippingInformation: 'shift within 2 days',
         reviews: '****',
         productUrl: "assets/product_images/note8pro.jpg"
@@ -389,7 +389,7 @@ const productData = [
         productCategory: 'Home & Furniture',
         productName: 'Ottoman bed',
         color: 'black',
-        price: '12000',
+        price: '23000',
         shippingInformation: 'shift Today',
         reviews: '****',
         productUrl: "assets/product_images/bed1.jpg"
@@ -735,7 +735,7 @@ const productData = [
         productCategory: 'Grocery',
         productName: 'Daawat Brown Basmati',
         size: '1kg',
-        price: 400,
+        price: 200,
         shippingInformation: 'shift Today',
         reviews: '****',
         productUrl: "assets/product_images/rice.jpg"
@@ -971,6 +971,230 @@ function showProduct(category)
 
 showProduct('fashion');
 
-//amit 
 
 
+function byPrice(){
+productData.sort((a,b) => (a.price > b.price ? 1 : -1 ));
+}
+
+function byName(){
+    productData.sort((a,b) => a.productName > b.productName ? 1 : -1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let amit = {
+//     id: 47,
+//     productCategory: 'Electronics',
+//     productName: 'Dell KM117 Wireless Keyboard & Mouse Combo',
+//     color: 'black',
+//     price: 1400,
+//     shippingInformation: 'shift Today',
+//     reviews: '****',
+//     productUrl: "assets/product_images/Dell1.jpg"
+// }
+
+// const keys = Object.keys(amit);
+// console.log('keys',keys);
+// const vals = Object.values(amit);
+// console.log('Values',vals);
+// const entries = Object.entries(amit);
+// console.log(entries[2][1])
+
+
+
+
+
+
+
+// const companies = [
+// {name:"company One", category:"Finance", start:1981, end:2003},
+// {name:"company Two", category:"Retail", start:1992, end:2008},
+// {name:"company Three", category:"Auto", start:1999, end:2007},
+// {name:"company Four", category:"Retail", start:1989, end:2010},
+// {name:"company Five", category:"Technology", start:2009, end:2014},
+// {name:"company Six", category:"Finance", start:1987, end:2003},
+// {name:"company Seven", category:"Auto", start:1986, end:2010},
+// {name:"company Eight", category:"Technology", start:2011, end:2096},
+// {name:"company Nine", category:"Retail", start:1981, end:2016},
+// ];
+
+// const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+
+// for(i=0; i<companies.length; i++){
+//     console.log(companies[i]);
+// }
+
+
+//foreach
+// companies.forEach function(company){
+//     console.log(company);
+// })
+
+
+//filter examples
+
+// let canDrink = [];
+// for(i=0; i<ages.length; i++){
+//     if(ages[i] >= 21){
+//         canDrink.push(ages[i]); 
+//     }
+// }
+// console.log(canDrink);
+
+// const canDrink = ages.filter(function(value){
+//     if(value >= 21){
+//         return true;
+//     }
+// })
+// console.log(canDrink);
+
+// const canDrink = ages.filter(value => value >= 21);
+// console.log(canDrink);
+
+
+// filter retail companies
+
+//ES5
+// const retailCompanies = companies.filter(function(company){
+//     if(company.category === 'Retail'){
+//         return true;
+//     }
+// });
+
+//ES6
+// const retailCompanies = companies.filter(company => company.category === 'Retail');
+
+//get 80's companies
+
+// const eightiesCompanies = companies.filter(function(eighty){
+//     if(eighty.start >= 1980 && eighty.start < 1990){
+//         return true;
+//     }
+// });
+
+
+// const eightiesCompanies = companies.filter(eighty => (eighty.start >= 1980 && eighty.start < 1990))
+// console.log(eightiesCompanies);
+
+//Get companies that lasted  10 years or more
+
+// const companiesLastedTenYears = companies.filter(company => (company.end - company.start >= 10));
+// console.log(companiesLastedTenYears);
+
+
+// end filter
+
+
+
+//map
+
+//create array of company names
+ 
+// const companyNames = companies.map(function(company){
+//     return company.name;
+// });
+// console.log(companyNames);
+
+
+// const testMap = companies.map(function(company){
+//     return `${company.name} [${company.start} - ${company.end}]`;
+// });
+
+
+// const testMap = companies.map(company => `${company.name} [${company.start} - ${company.end}]`);
+// console.log(testMap);
+
+// const agesMap = ages
+// .map(age => Math.sqrt(age))
+// .map(age => age * 2);
+// console.log(agesMap);
+
+
+
+//sort
+// const sortedCompanies = companies.sort(function(c1,c2){
+// if(c1.start > c2.start){
+//     return 1;
+// }else{
+//     return -1;
+// }
+// });
+
+
+// const sortedCompanies = companies.sort((c1,c2) => (c1.start > c2.start ? 1 : -1));
+// console.log(sortedCompanies)
+
+// const sortAges = ages.sort((a,b) => a-b);
+// console.log(sortAges);
+
+
+// //reduce
+
+// let ageSum = 0;
+// for(i=0; i< ages.length; i++){
+//     ageSum += ages[i];
+// }
+// console.log(ageSum);
+
+
+// get total years of all companies
+
+// const totalYears = companies.reduce(function(total,company){
+//     return total + (company.end - company.start);
+// },0);
+// console.log(totalYears)
+
+
+
+// combine method
+
+// const combined = ages
+//     .map(age => age * 2)
+//     .filter(age => age >= 40)
+//     .sort((a,b) => a -b)
+//     .reduce((a,b) => a+b , 0)
+// console.log(combined)

@@ -29,7 +29,7 @@
   }
 
  /* product category */
-
+ .product_category{cursor: pointer;}
  .product_category ul {
     list-style-type: none;
     margin: 0;
@@ -40,7 +40,7 @@
   
   .product_category li {
     float: left;
-    padding: 0px 0px 0px 120px;
+    padding: 0px 0px 0px 80px;
 
     color: white;
     text-align: center;
@@ -57,3 +57,5 @@
   .child1{float: left;  padding: 21px; width: 25%;}
   .child1 h1{color:#FFA41C}
   .child1 h5{color:#C94F04}
+
+  
