@@ -555,7 +555,7 @@ const productData = [
     {
         id: 47,
         productCategory: 'Electronics',
-        productName: 'Dell KM117 Wireless Keyboard & Mouse Combo',
+        productName: 'Dell Keyboard & Mouse',
         color: 'black',
         price: 1400,
         shippingInformation: 'shift Today',
@@ -565,7 +565,7 @@ const productData = [
     {
         id: 48,
         productCategory: 'Electronics',
-        productName: 'Tenda AC1200 AC5 Smart Dual-Band Wi-Fi Router',
+        productName: 'Tenda Wi-Fi Router',
         color: 'red',
         price: 1300,
         shippingInformation: 'shift in Three days',
@@ -609,7 +609,7 @@ const productData = [
     {
         id: 52,
         productCategory: 'Electronics',
-        productName: 'New Inspiron 14 5402 Laptop',
+        productName: 'New Inspiron Laptop',
         color: 'black',
         price: 40690,
         shippingInformation: 'shift monday',
@@ -619,7 +619,7 @@ const productData = [
     {
         id: 53,
         productCategory: 'Electronics',
-        productName: 'HP 250 Intel Core i3 4GB RAM',
+        productName: 'HPIntel Core i3 4GB RAM',
         size: 'large',
         color: 'black',
         price: 33350,
@@ -672,7 +672,7 @@ const productData = [
     {
         id: 58,
         productCategory: 'Electronics',
-        productName: 'eAirtec 81 cms HD Ready LED TV ',
+        productName: 'eAirtec 81 cms LED TV ',
         size: '8',
         color: 'black',
         price: 32000,
@@ -825,7 +825,7 @@ const productData = [
     {
         id: 72,
         productCategory: 'Grocery',
-        productName: 'Candid Anti Fungal Powder',
+        productName: 'Candid Anti  Powder',
         size: '1',
         price: 500,
         shippingInformation: 'shift Today',
@@ -835,7 +835,7 @@ const productData = [
     {
         id: 73,
         productCategory: 'Grocery',
-        productName: 'Harvest Whole Wheat Crack',
+        productName: 'Harvest Whole Crack',
         size: '1 packet',
         price: 280,
         shippingInformation: 'shift Today',
@@ -865,7 +865,7 @@ const productData = [
     {
         id: 76,
         productCategory: 'Grocery',
-        productName: 'Buy Jiva Haldi Chandan Soap',
+        productName: 'Buy Jiva Chandan Soap',
         size: '1 peace',
         price: '80',
         shippingInformation: 'shift Today',
@@ -875,7 +875,7 @@ const productData = [
     {
         id: 77,
         productCategory: 'Grocery',
-        productName: 'Buy NIVEA Women Face Wash',
+        productName: 'Buy NIVEA Face Wash',
         size: '1kg',
         price: 370,
         shippingInformation: 'shift Today',
@@ -885,7 +885,7 @@ const productData = [
     {
         id: 78,
         productCategory: 'Grocery',
-        productName: 'Colgate Diabetics Advanced',
+        productName: 'Colgate Advanced',
         size: '1kg',
         price: 100,
         shippingInformation: 'shift Today',
@@ -897,76 +897,65 @@ const productData = [
 
 
 
-function handleOnTabChange(){
+// function handleOnTabChange(){
   
-    let textFashion = 'FASHION';
-    let fashion = document.getElementById('fashion');
-    fashion.innerText = textFashion;
-    fashion.style.color = 'white';
-    fashion.style.fontSize = '15px';
-    fashion.style.padding = '16px ';
-    fashion.style.fontWeight = 'bold';
+//     let textFashion = 'FASHION';
+//     let fashion = document.getElementById('fashion');
+//     fashion.innerText = textFashion;
+//     fashion.style.color = 'white';
+//     fashion.style.fontSize = '15px';
+//     fashion.style.padding = '16px ';
+//     fashion.style.fontWeight = 'bold';
 
-    let textMobiles = 'MOBILES';    
-    let mobiles = document.getElementById('mobiles');
-    mobiles.innerText = textMobiles;
-    mobiles.style.color = 'white';
-    mobiles.style.fontSize = '15px';
-    mobiles.style.padding = '16px';
-    mobiles.style.fontWeight = 'bold';
+//     let textMobiles = 'MOBILES';    
+//     let mobiles = document.getElementById('mobiles');
+//     mobiles.innerText = textMobiles;
+//     mobiles.style.color = 'white';
+//     mobiles.style.fontSize = '15px';
+//     mobiles.style.padding = '16px';
+//     mobiles.style.fontWeight = 'bold';
 
-    let textHomeFurniture = 'HOME & FURNITURE';
-    let homeFurniture = document.getElementById('homeFurniture');
-    homeFurniture.innerText = textHomeFurniture;
-    homeFurniture.style.color = 'white';
-    homeFurniture.style.fontSize = '15px';
-    homeFurniture.style.padding = '16px ';
-    homeFurniture.style.fontWeight = 'bold';
+//     let textHomeFurniture = 'HOME & FURNITURE';
+//     let homeFurniture = document.getElementById('homeFurniture');
+//     homeFurniture.innerText = textHomeFurniture;
+//     homeFurniture.style.color = 'white';
+//     homeFurniture.style.fontSize = '15px';
+//     homeFurniture.style.padding = '16px ';
+//     homeFurniture.style.fontWeight = 'bold';
 
-    let textElectronics = 'ELECTRONICS';
-    let electronics = document.getElementById('electronics');
-    electronics.innerText = textElectronics;
-    electronics.style.color = 'white';
-    electronics.style.fontSize = '15px';
-    electronics.style.padding = '16px ';
-    electronics.style.fontWeight = 'bold';  
+//     let textElectronics = 'ELECTRONICS';
+//     let electronics = document.getElementById('electronics');
+//     electronics.innerText = textElectronics;
+//     electronics.style.color = 'white';
+//     electronics.style.fontSize = '15px';
+//     electronics.style.padding = '16px ';
+//     electronics.style.fontWeight = 'bold';  
 
-    let textGrocery = 'GROCERY';
-    let grocery = document.getElementById('grocery');
-    grocery.innerText = textGrocery;
-    grocery.style.color = 'white';
-    grocery.style.fontSize = '15px';
-    grocery.style.padding = '16px ';
-    grocery.style.fontWeight = 'bold';  
+//     let textGrocery = 'GROCERY';
+//     let grocery = document.getElementById('grocery');
+//     grocery.innerText = textGrocery;
+//     grocery.style.color = 'white';
+//     grocery.style.fontSize = '15px';
+//     grocery.style.padding = '16px ';
+//     grocery.style.fontWeight = 'bold';  
 
-} //end of function
+// } //end of function
 
-handleOnTabChange();
+// handleOnTabChange();
 
-const currentProducts = [];
+var currentProducts = [];
 
 
 function showProduct(category)
 {
     //debugger;
-    
+   currentProducts = [];
+
     for (i=0; i<productData.length; i++)
     {  
         if(productData[i].productCategory === category)
        
         { 
-            // var newChild = `<div class="product_img"><img src=`+productData[i].productUrl+` alt=""></div>`;
-            // parent.insertAdjacentHTML('beforeend', newChild);
-            // var newChild1 = `<div class="child1">
-
-            //     <h4>`+productData[i].productName+`</h4>
-            //     <h6>sizes avilable: `+productData[i].size+`<h6>
-            //      `+productData[i].color+` in color<br>
-            //     <h5>₹`+productData[i].price+` Save (15%)<h5>
-            //     `+productData[i].shippingInformation+`
-            //     <h1>`+productData[i].reviews+`</h1><br>
-            //     </div>`;
-            //     parent.insertAdjacentHTML('beforeend', newChild1)
                currentProducts.push(productData[i]);
         }   //end of if
     } //end of loop
