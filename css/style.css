@@ -2,9 +2,9 @@
 .slider img{width: 100%; background-size: cover;}
 .logo img{height:100px; padding: 15px 0px 10px 60px; cursor:pointer;}
 .logo{float: left;}
-.navbar {float: right;}
-.navbar {padding: 25px 40px 0px 0px}
-.navbar ul {
+.navbar1 {float: right;}
+.navbar1 {padding: 25px 40px 0px 0px}
+.navbar1 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -12,24 +12,72 @@
     
   }
   
-  .navbar li {
+  .navbar1 li {
     float: left;
   }
   
-  .navbar li a {
+  .navbar1 li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 35px 16px 66px;
     text-decoration: none;
   }
-  
-  .navbar li a:hover {
+
+  /* contact button */
+  div#wpcs_tab_44229 {
+    border: 1px solid;
+    border-bottom: none;
+    cursor: pointer;
+    width: 170px;
+    height: 34px;
+    overflow: hidden;
+    background: #58595b;
+    color: #ffffff;
+    padding: 2px 0px 2px 0px;
+    position: fixed;
+    top: 200px;
+    right: -68px;
+    text-align: center;
+    transform: rotate(
+-90deg
+);
+    z-index: 9999999;
+    font-size: 18px;
+}
+
+div.wpcs_tab {
+  font-weight: 300;
+  padding: 5px 0px 16px 0px!important;
+  height: 60px!important;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 140px!important;
+  border: 0px!important;
+}
+
+/* login button */
+.loginbtn{color: #2874f0;
+  font-weight: 500;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  height: 32px;
+  padding: 0px 40px;
+  border: 1px solid #dbdbdb;
+}
+
+
+
+  /* .navbar li a:hover {
     background-color: #111;
-  }
+  } */
+
+
 
  /* product category */
 
+ /* .product_category{cursor: pointer;}
  .product_category ul {
     list-style-type: none;
     margin: 0;
@@ -40,7 +88,7 @@
   
   .product_category li {
     float: left;
-    padding: 0px 0px 0px 120px;
+    padding: 0px 0px 0px 80px;
 
     color: white;
     text-align: center;
@@ -50,8 +98,13 @@
   .product_category li :hover {
     cursor: pointer;
     background-color: #111;
-  }
+  } */
 
+  /* product category */
+  .mynav .anch{margin: 0px 0px 0px 65px; font-weight: bold; cursor: pointer;}
+  /* .mynav .anch:hover{background-color: #111;} */
+  .dropdown-item{cursor: pointer;}
+  /* .dropdown-item .sort:hover{background-color: red;;} */
 /* dom css */
 
   .product_img img{height: 250px; padding: 21px; float: left; width: 25%;}
@@ -61,6 +114,7 @@
   .child1 h1{color:#FFA41C}
   .child1 h5{color:#C94F04}
 
+  
   .clear{clear:both;}
   /* footer css */
   .footer{padding: 0px 0px 75px 0px ; text-align: center; font-weight: bold; background-color: #172337; cursor: pointer;}

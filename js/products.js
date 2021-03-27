@@ -3,10 +3,10 @@ const productData = [
         id: 1,
         productCategory: 'fashion',
         productName: `Tryme Fashion
-        Men's Regular Fit Casual Shirt`,
+        Men's Regular Casual Shirt`,
         size: 'xl',
         color: 'black',
-        price: 400,
+        price: 900,
         shippingInformation: 'shift Today',
         reviews: '****',
         productUrl: "assets/product_images/casual_shirt.png"
@@ -14,7 +14,7 @@ const productData = [
     {
         id: 2,
         productCategory: 'fashion',
-        productName: `Mens' Shirts, Digital Printed Half Sleeves Shirts for Men, Rayon`,
+        productName: `Mens' Shirts, Digital Printed Half Sleeves Shirts for Men`,
         size: 'xxl',
         color: 'red',
         price: 500,
@@ -208,7 +208,7 @@ const productData = [
         productName: 'redmi note7',
         size: 5.5,
         color: 'black',
-        price: 10000,
+        price: 17000,
         shippingInformation: 'shift Today',
         reviews: '****',
         productUrl: "assets/product_images/note7.jpg"
@@ -242,7 +242,7 @@ const productData = [
         productName: 'redmi note8 pro',
         size: 5.5,
         color: 'black',
-        price: 13900,
+        price: 10900,
         shippingInformation: 'shift within 2 days',
         reviews: '****',
         productUrl: "assets/product_images/note8pro.jpg"
@@ -389,7 +389,7 @@ const productData = [
         productCategory: 'Home & Furniture',
         productName: 'Ottoman bed',
         color: 'black',
-        price: '12000',
+        price: '23000',
         shippingInformation: 'shift Today',
         reviews: '****',
         productUrl: "assets/product_images/bed1.jpg"
@@ -555,7 +555,7 @@ const productData = [
     {
         id: 47,
         productCategory: 'Electronics',
-        productName: 'Dell KM117 Wireless Keyboard & Mouse Combo',
+        productName: 'Dell Keyboard & Mouse',
         color: 'black',
         price: 1400,
         shippingInformation: 'shift Today',
@@ -565,7 +565,7 @@ const productData = [
     {
         id: 48,
         productCategory: 'Electronics',
-        productName: 'Tenda AC1200 AC5 Smart Dual-Band Wi-Fi Router',
+        productName: 'Tenda Wi-Fi Router',
         color: 'red',
         price: 1300,
         shippingInformation: 'shift in Three days',
@@ -609,7 +609,7 @@ const productData = [
     {
         id: 52,
         productCategory: 'Electronics',
-        productName: 'New Inspiron 14 5402 Laptop',
+        productName: 'New Inspiron Laptop',
         color: 'black',
         price: 40690,
         shippingInformation: 'shift monday',
@@ -619,7 +619,7 @@ const productData = [
     {
         id: 53,
         productCategory: 'Electronics',
-        productName: 'HP 250 Intel Core i3 4GB RAM',
+        productName: 'HPIntel Core i3 4GB RAM',
         size: 'large',
         color: 'black',
         price: 33350,
@@ -672,7 +672,7 @@ const productData = [
     {
         id: 58,
         productCategory: 'Electronics',
-        productName: 'eAirtec 81 cms HD Ready LED TV ',
+        productName: 'eAirtec 81 cms LED TV ',
         size: '8',
         color: 'black',
         price: 32000,
@@ -735,7 +735,7 @@ const productData = [
         productCategory: 'Grocery',
         productName: 'Daawat Brown Basmati',
         size: '1kg',
-        price: 400,
+        price: 200,
         shippingInformation: 'shift Today',
         reviews: '****',
         productUrl: "assets/product_images/rice.jpg"
@@ -825,7 +825,7 @@ const productData = [
     {
         id: 72,
         productCategory: 'Grocery',
-        productName: 'Candid Anti Fungal Powder',
+        productName: 'Candid Anti  Powder',
         size: '1',
         price: 500,
         shippingInformation: 'shift Today',
@@ -835,7 +835,7 @@ const productData = [
     {
         id: 73,
         productCategory: 'Grocery',
-        productName: 'Harvest Whole Wheat Crack',
+        productName: 'Harvest Whole Crack',
         size: '1 packet',
         price: 280,
         shippingInformation: 'shift Today',
@@ -865,7 +865,7 @@ const productData = [
     {
         id: 76,
         productCategory: 'Grocery',
-        productName: 'Buy Jiva Haldi Chandan Soap',
+        productName: 'Buy Jiva Chandan Soap',
         size: '1 peace',
         price: '80',
         shippingInformation: 'shift Today',
@@ -875,7 +875,7 @@ const productData = [
     {
         id: 77,
         productCategory: 'Grocery',
-        productName: 'Buy NIVEA Women Face Wash',
+        productName: 'Buy NIVEA Face Wash',
         size: '1kg',
         price: 370,
         shippingInformation: 'shift Today',
@@ -885,7 +885,7 @@ const productData = [
     {
         id: 78,
         productCategory: 'Grocery',
-        productName: 'Colgate Diabetics Advanced',
+        productName: 'Colgate Advanced',
         size: '1kg',
         price: 100,
         shippingInformation: 'shift Today',
@@ -895,83 +895,325 @@ const productData = [
 
 ];
 
-function handleOnTabChange(){
+
+
+// function handleOnTabChange(){
   
-    let textFashion = 'FASHION';
-    let fashion = document.getElementById('fashion');
-    fashion.innerText = textFashion;
-    fashion.style.color = 'white';
-    fashion.style.fontSize = '15px';
-    fashion.style.padding = '16px ';
-    fashion.style.fontWeight = 'bold';
+//     let textFashion = 'FASHION';
+//     let fashion = document.getElementById('fashion');
+//     fashion.innerText = textFashion;
+//     fashion.style.color = 'white';
+//     fashion.style.fontSize = '15px';
+//     fashion.style.padding = '16px ';
+//     fashion.style.fontWeight = 'bold';
 
-    let textMobiles = 'MOBILES';    
-    let mobiles = document.getElementById('mobiles');
-    mobiles.innerText = textMobiles;
-    mobiles.style.color = 'white';
-    mobiles.style.fontSize = '15px';
-    mobiles.style.padding = '16px';
-    mobiles.style.fontWeight = 'bold';
+//     let textMobiles = 'MOBILES';    
+//     let mobiles = document.getElementById('mobiles');
+//     mobiles.innerText = textMobiles;
+//     mobiles.style.color = 'white';
+//     mobiles.style.fontSize = '15px';
+//     mobiles.style.padding = '16px';
+//     mobiles.style.fontWeight = 'bold';
 
-    let textHomeFurniture = 'HOME & FURNITURE';
-    let homeFurniture = document.getElementById('homeFurniture');
-    homeFurniture.innerText = textHomeFurniture;
-    homeFurniture.style.color = 'white';
-    homeFurniture.style.fontSize = '15px';
-    homeFurniture.style.padding = '16px ';
-    homeFurniture.style.fontWeight = 'bold';
+//     let textHomeFurniture = 'HOME & FURNITURE';
+//     let homeFurniture = document.getElementById('homeFurniture');
+//     homeFurniture.innerText = textHomeFurniture;
+//     homeFurniture.style.color = 'white';
+//     homeFurniture.style.fontSize = '15px';
+//     homeFurniture.style.padding = '16px ';
+//     homeFurniture.style.fontWeight = 'bold';
 
-    let textElectronics = 'ELECTRONICS';
-    let electronics = document.getElementById('electronics');
-    electronics.innerText = textElectronics;
-    electronics.style.color = 'white';
-    electronics.style.fontSize = '15px';
-    electronics.style.padding = '16px ';
-    electronics.style.fontWeight = 'bold';  
+//     let textElectronics = 'ELECTRONICS';
+//     let electronics = document.getElementById('electronics');
+//     electronics.innerText = textElectronics;
+//     electronics.style.color = 'white';
+//     electronics.style.fontSize = '15px';
+//     electronics.style.padding = '16px ';
+//     electronics.style.fontWeight = 'bold';  
 
-    let textGrocery = 'GROCERY';
-    let grocery = document.getElementById('grocery');
-    grocery.innerText = textGrocery;
-    grocery.style.color = 'white';
-    grocery.style.fontSize = '15px';
-    grocery.style.padding = '16px ';
-    grocery.style.fontWeight = 'bold';  
+//     let textGrocery = 'GROCERY';
+//     let grocery = document.getElementById('grocery');
+//     grocery.innerText = textGrocery;
+//     grocery.style.color = 'white';
+//     grocery.style.fontSize = '15px';
+//     grocery.style.padding = '16px ';
+//     grocery.style.fontWeight = 'bold';  
 
-} //end of function
+// } //end of function
 
-handleOnTabChange();
+// handleOnTabChange();
+
+var currentProducts = [];
+
 
 function showProduct(category)
 {
     //debugger;
-    var parent = document.getElementById('productList');
-    parent.innerHTML = '';
+   currentProducts = [];
 
     for (i=0; i<productData.length; i++)
     {  
         if(productData[i].productCategory === category)
-        {
-            var newChild = `<div class="product_img"><img src=`+productData[i].productUrl+` alt=""></div>`;
+       
+        { 
+               currentProducts.push(productData[i]);
+        }   //end of if
+    } //end of loop
+    drawProducts();
+} //end of function
+showProduct('fashion');
+
+function drawProducts(){
+    var parent = document.getElementById('productList');
+    parent.innerHTML = '';
+
+    for (i=0; i<currentProducts.length; i++)
+    { 
+    var newChild = `<div class="product_img"><img src=`+currentProducts[i].productUrl+` alt=""></div>`;
             parent.insertAdjacentHTML('beforeend', newChild);
             var newChild1 = `<div class="child1">
 
-                <h4>`+productData[i].productName+`</h4>
-                <h6>sizes avilable: `+productData[i].size+`<h6>
-                 `+productData[i].color+` in color<br>
-                <h5>₹`+productData[i].price+` Save (15%)<h5>
-                `+productData[i].shippingInformation+`
-                <h1>`+productData[i].reviews+`</h1><br>
+                <h4>`+currentProducts[i].productName+`</h4>
+                <h6>sizes avilable: `+currentProducts[i].size+`<h6>
+                 `+currentProducts[i].color+` in color<br>
+                <h5>₹`+currentProducts[i].price+` Save (15%)<h5>
+                `+currentProducts[i].shippingInformation+`
+                <h1>`+currentProducts[i].reviews+`</h1><br>
                 </div>`;
                 parent.insertAdjacentHTML('beforeend', newChild1)
-    
-        }   //end of if
-    } //end of loop
-} //end of function
+
+          
+            } //end of loop
+    } //end of function
 
 
-showProduct('fashion');
-
-//amit 
 
 
+function byPrice(){
+currentProducts.sort((a,b) => (a.price > b.price ? 1 : -1 ));
+drawProducts();
+}
+
+function byName(){
+currentProducts.sort((a,b) => a.productName > b.productName ? 1 : -1);
+drawProducts();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let amit = {
+//     id: 47,
+//     productCategory: 'Electronics',
+//     productName: 'Dell KM117 Wireless Keyboard & Mouse Combo',
+//     color: 'black',
+//     price: 1400,
+//     shippingInformation: 'shift Today',
+//     reviews: '****',
+//     productUrl: "assets/product_images/Dell1.jpg"
+// }
+
+// const keys = Object.keys(amit);
+// console.log('keys',keys);
+// const vals = Object.values(amit);
+// console.log('Values',vals);
+// const entries = Object.entries(amit);
+// console.log(entries[2][1])
+
+
+
+
+
+
+
+// const companies = [
+// {name:"company One", category:"Finance", start:1981, end:2003},
+// {name:"company Two", category:"Retail", start:1992, end:2008},
+// {name:"company Three", category:"Auto", start:1999, end:2007},
+// {name:"company Four", category:"Retail", start:1989, end:2010},
+// {name:"company Five", category:"Technology", start:2009, end:2014},
+// {name:"company Six", category:"Finance", start:1987, end:2003},
+// {name:"company Seven", category:"Auto", start:1986, end:2010},
+// {name:"company Eight", category:"Technology", start:2011, end:2096},
+// {name:"company Nine", category:"Retail", start:1981, end:2016},
+// ];
+
+// const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+
+// for(i=0; i<companies.length; i++){
+//     console.log(companies[i]);
+// }
+
+
+//foreach
+// companies.forEach function(company){
+//     console.log(company);
+// })
+
+
+//filter examples
+
+// let canDrink = [];
+// for(i=0; i<ages.length; i++){
+//     if(ages[i] >= 21){
+//         canDrink.push(ages[i]); 
+//     }
+// }
+// console.log(canDrink);
+
+// const canDrink = ages.filter(function(value){
+//     if(value >= 21){
+//         return true;
+//     }
+// })
+// console.log(canDrink);
+
+// const canDrink = ages.filter(value => value >= 21);
+// console.log(canDrink);
+
+
+// filter retail companies
+
+//ES5
+// const retailCompanies = companies.filter(function(company){
+//     if(company.category === 'Retail'){
+//         return true;
+//     }
+// });
+
+//ES6
+// const retailCompanies = companies.filter(company => company.category === 'Retail');
+
+//get 80's companies
+
+// const eightiesCompanies = companies.filter(function(eighty){
+//     if(eighty.start >= 1980 && eighty.start < 1990){
+//         return true;
+//     }
+// });
+
+
+// const eightiesCompanies = companies.filter(eighty => (eighty.start >= 1980 && eighty.start < 1990))
+// console.log(eightiesCompanies);
+
+//Get companies that lasted  10 years or more
+
+// const companiesLastedTenYears = companies.filter(company => (company.end - company.start >= 10));
+// console.log(companiesLastedTenYears);
+
+
+// end filter
+
+
+
+//map
+
+//create array of company names
+ 
+// const companyNames = companies.map(function(company){
+//     return company.name;
+// });
+// console.log(companyNames);
+
+
+// const testMap = companies.map(function(company){
+//     return `${company.name} [${company.start} - ${company.end}]`;
+// });
+
+
+// const testMap = companies.map(company => `${company.name} [${company.start} - ${company.end}]`);
+// console.log(testMap);
+
+// const agesMap = ages
+// .map(age => Math.sqrt(age))
+// .map(age => age * 2);
+// console.log(agesMap);
+
+
+
+//sort
+// const sortedCompanies = companies.sort(function(c1,c2){
+// if(c1.start > c2.start){
+//     return 1;
+// }else{
+//     return -1;
+// }
+// });
+
+
+// const sortedCompanies = companies.sort((c1,c2) => (c1.start > c2.start ? 1 : -1));
+// console.log(sortedCompanies)
+
+// const sortAges = ages.sort((a,b) => a-b);
+// console.log(sortAges);
+
+
+// //reduce
+
+// let ageSum = 0;
+// for(i=0; i< ages.length; i++){
+//     ageSum += ages[i];
+// }
+// console.log(ageSum);
+
+
+// get total years of all companies
+
+// const totalYears = companies.reduce(function(total,company){
+//     return total + (company.end - company.start);
+// },0);
+// console.log(totalYears)
+
+
+
+// combine method
+
+// const combined = ages
+//     .map(age => age * 2)
+//     .filter(age => age >= 40)
+//     .sort((a,b) => a -b)
+//     .reduce((a,b) => a+b , 0)
+// console.log(combined)
 // for merge branch

@@ -8,6 +8,9 @@
     <link rel="icon" href="assets/product_images/images-removebg-preview.png" type="image/icon type">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,37 +20,65 @@
             <div class="logo">
                 <img href="" src="assets/product_images/images-removebg-preview.png" alt="">
             </div>
-            <div class="navbar">
+            <div class="navbar1">
                 <ul>
                     <li><a class="active" href="#"><b>Home</b></a></li>
                     <!-- <li><a href="Products"><b>About</b></a></li> -->
                     <li><a href="#contact"><b>Products</b></a></li>
-                    <li><a href="#about"><b>Contact us</b></a></li>
+                    <li><a href=""><button  class="btn loginbtn">Login</button> </a></li>
                 </ul>
                   
             </div>
         </div>
+        
+        <div id="wpcs_tab_44229" class="wpcs_tab" aria-label="Contact Us">Contact Us </div>
+       
         <div class="slider">
             <img src="assets/product_images/slider-01-1903x820 (1)-1903x820.jpg" alt="">
         </div>
         <br>
         <div class="main_content">
             <h1 align="center"><b>Our Products</b></h1>
-       
-            <br>
-            <div class="product_category">
-                <ul>
-                    <li><div onclick="showProduct('fashion');" class="tabStyle" id="fashion"></div></li>
-                    <li><div onclick="showProduct('Mobiles');" class="tabStyle" id="mobiles"></div></li>
-                    <li><div onclick="showProduct('Home & Furniture');" class="tabStyle" id="homeFurniture"></div></li>
-                    <li><div onclick="showProduct('Electronics');" class="tabStyle" id="electronics"></div></li>
-                    <li><div onclick="showProduct('Grocery');" class="tabStyle" id="grocery"></div></li>
-                </ul>
-            </div>
-            <br>
-        </div>
+        <br>
+        <div class="product_category">
+            <!-- <ul>
+                <li><div onclick="showProduct('fashion');" class="tabStyle" id="fashion"></div></li>
+                <li><div onclick="showProduct('Mobiles');" class="tabStyle" id="mobiles"></div></li>
+                <li><div onclick="showProduct('Home & Furniture');" class="tabStyle" id="homeFurniture"></div></li>
+                <li><div onclick="showProduct('Electronics');" class="tabStyle" id="electronics"></div></li>
+                <li><div onclick="showProduct('Grocery');" class="tabStyle" id="grocery"></div></li>
+                
+                <li><div onclick="showProduct('Grocery');" class="tabStyle" id="grocery"></div></li>
 
-        <div id="productList"> </div>
+
+                <button style="margin: 10px 10px 10px 80px;" onclick="byPrice();" class="btn btn-primary">SortbyPrice</button>
+                <button onclick="byName();"class="btn btn-primary">SortbyName</button>
+            </ul> -->
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark mynav">
+                <!-- Brand -->
+                <div class="navbar-brand mr-5 anch" onclick="showProduct('fashion');">FASHION</div>
+                <div class="navbar-brand mr-5 anch" onclick="showProduct('Mobiles');" href="#">MOBILES</div>
+                <div class="navbar-brand mr-5 anch" onclick="showProduct('Home & Furniture');"  href="#">HOME & FURNITURE</div>
+                <div class="navbar-brand mr-5 anch" onclick="showProduct('Electronics');" href="#">ELECTRONICS</div>
+                <div class="navbar-brand mr-5 anch" onclick="showProduct('Grocery');" href="#">GROCERY</div>
+              
+                <!-- Links -->
+                  <!-- Dropdown -->
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><b>SortBy</b>
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu" style="min-width: 6rem;">
+                          <li><div class="dropdown-item" onclick="byPrice();"><b>SortBy Price</b></div></li>
+                          <li><div class="dropdown-item" onclick="byName();"><b>SortBy Name</b></div></li>
+                        </ul>
+                      </div>
+              </nav>
+         </div>
+         <br>
+         <div id="productList">
+           
+         </div>
+        <br>
 
         <div class="clear"></div>
         <div class="footer">
