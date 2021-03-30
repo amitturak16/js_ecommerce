@@ -5,82 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   
-    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/authentication.css">
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
 </head>
 <body>
-    <div class="logo">
-        <a href="index.html">
-        <img src="assets/product_images/images-removebg-preview.png" style="width: 150px; cursor: pointer;" alt="">
-        </a>
-    </div>
-    <br>
-        <div class="container">
-          <div class="backbox">
-            <div class="loginMsg">
-              <div class="textcontent">
-                <p class="title">Don't have an account?</p>
-                <p>Sign up to save all your graph.</p>
-                <button id="switch1">Sign Up</button>
-              </div>
-            </div>
-            <div class="signupMsg visibility">
-              <div class="textcontent">
-                <p class="title">Have an account?</p>
-                <p>Log in to see all your collection.</p>
-                <button id="switch2">LOG IN</button>
-              </div>
-            </div>
-          </div>
-          <!-- backbox -->
+  
       
-          <div class="frontbox">
-            <form id="login-form">
-              <div class="login">
-                <h2>LOG IN</h2>
-                <div class="inputbox">
-                  <input id="userName" value="" type="text" name="email" placeholder="  USERNAME">
-                  <input id="userPw" value="" type="password" name="password" placeholder="  PASSWORD">
+        <div class="container">
+      
+          <!-- login form start -->
+            <div id="div1">
+                <h1 class="text-center bg-dark text-white">Login</h1>
+              <form class="form1" onsubmit="return check();"> 
+                <div class="imgcontainer">
+                  <img src="assets/product_images/img_avatar2.png" alt="Avatar" class="avatar">
                 </div>
-                <p>FORGET PASSWORD?</p>
-                <button onclick="check();" id="login_btn">LOG IN</button>
-              </div>
-            </form>
-
-            <form id="register-form" onsubmit="return formValidation();">
-              <div class="signup hide">
-                <h2>SIGN UP</h2>
-                <div class="inputbox">
-                  <input id="name" type="text" value="" name="fullname" placeholder="  FULLNAME">
-                  <span id="errorName" class="text-danger font-weight-bold"></span>
-
-                  <input id="mobile" type="tel" value="" name="mobile" placeholder="  MOBILE NO">
-                  <span id="errorMobile" class="text-danger font-weight-bold"></span>
-
-                  <input id="address" type="text" value="" name="fullname" placeholder="  ADDRESS">
-                  <span id="errorAddress" class="text-danger font-weight-bold"></span>
-
-                  <input id="email" type="email" value="" name="email" placeholder="  EMAIL">
-                  <span id="errorEmail" class="text-danger font-weight-bold"></span>
-
-                  <input id="password" type="password" value="" name="password" placeholder="  PASSWORD">
-                  <span id="errorPassword" class="text-danger font-weight-bold"></span>
-
-                  <input id="login_token" type="text" value="" name="token" placeholder="  LOGIN TOKEN">
-                  <span id="errorLoginToken" class="text-danger font-weight-bold"></span>
+              
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" id="useremail" placeholder="Enter Username" name="uname" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" id="userpassword" placeholder="Enter Password" name="psw" required>
+                      
+                  <button type="submit">Login</button>
+                  <!-- <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label> -->
+                  <div class="container signin">
+                    <p>New to MyEcommerce? <a href="#" id="mylinks">Create an account</a>.</p>
+                  </div>
                 </div>
-                <button onclick="store();" id="register_btn">SIGN UP</button>
-              </div>
-            </form>
-          </div>
-          <!-- frontbox -->
-          <div class="mainArea">
+              </form>
+            </div>  
+          <!-- login form end -->
 
-          </div>
+          <!-- register form start -->
+            <div id="div2">
+              
+              <h1 class="text-center bg-dark text-white">Register Here</h1>
+              <form class="form2" onsubmit="return validate();">
+                <div class="container">
+                  <!-- <h1>Register</h1> -->
+                  <p style="color: #2874f0;"><b>Please fill in this form to create an account.</b></p>
+                  <hr>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="psw"><b>FullName:</b> </label>
+                      <input type="text" name="" placeholder="Enter Full Name" id="username" value="" >
+                      <span id="nameError" class="text-danger font-weight-bold"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label><b>Email:</b> </label>
+                        <input type="text" name="" placeholder="Enter Email" id="email" class="" value="">
+                        <span id="emailError" class="text-danger font-weight-bold"></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label><b>Password:</b> </label>
+                      <input type="password" name="" placeholder="Enter Password" id="password" value="">
+                      <span id="passwordError" class="text-danger font-weight-bold"></span>
+                    </div>
+                    <div class="col-md-6">
+                      <label><b>Confirm Password:</b> </label>
+                      <input type="password" name="" placeholder="Enter Confirm Password" id="cpassword" class="" value="">
+                      <span id="confirmPasswordError" class="text-danger font-weight-bold"></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label><b>Address:</b> </label>
+                      <input type="text" name="" placeholder="Enter Your Address" id="address" class="" value="">
+                      <span id="addressError" class="text-danger font-weight-bold"></span>  
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label><b>Mobile Number:</b> </label>
+                      <input type="text" name="" placeholder="Enter Mobile Number" id="mobile" class="" value="">
+                      <span id="mobileNoError" class="text-danger font-weight-bold"></span>
+                    </div>
+                    <div class="col-md-6">  
+                      <label><b>Login Token:</b> </label>
+                      <input type="text" name="" placeholder="Token" id="loginToken" class="" value="">
+                      <span id="loginToken" class="text-danger font-weight-bold"></span>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="registerbtn">Register</button>
+                <div class="container signin">
+                  <p>Already have an account? <a href="" id="mylinks">Sign in</a>.</p>
+                </div>
+              </form>
+            </div>
+          <!-- register form end -->
         </div>
-        <script src="js/authentication.js"></script>
+       <script src="js/authentication.js"></script>
 </body>
 </html>

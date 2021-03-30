@@ -1,132 +1,118 @@
-// data from register form
-let userName = document.getElementById('name');
-let mobile = document.getElementById('mobile');
-let address = document.getElementById('address');
-let email = document.getElementById('email');
-let password = document.getElementById('password');
-let loginToken = document.getElementById('login_token');
 
-// storing input from register from
-function store(){
-  localStorage.setItem('userName', userName.value);
-  localStorage.setItem('mobile', mobile.value);
-  localStorage.setItem('address', address.value);
-  localStorage.setItem('email', email.value);
-  localStorage.setItem('password', password.value);
-  localStorage.setItem('loginToken', loginToken.value);
-}
+function validate(){
 
+ // let userProfileData = [];
+   // localStorage.setItem('userProfileData',JSON.stringify(userProfileData));
 
-// check if stored data from register-form is equal to entered data in the   login-form
-function check(){
+if(localStorage.getItem('userProfileData') == null){
+   localStorage.setItem('userProfileData','[]');
+   }
   
-  // stored data from registerd form
-  let storedName = localStorage.getItem('userName');
-  let storedPassword = localStorage.getItem('password');
 
-  //enterd data from the login form
-  let enterUserName = document.getElementById('userName').value;
-  let enetrUserPw = document.getElementById('userPw').value;
+   let fullName = document.getElementById('username').value;
+   let email = document.getElementById('email').value;
+   let password = document.getElementById('password').value;
+   let cpassword = document.getElementById('cpassword').value;
+   let address = document.getElementById('address').value;
+   let mobileNumber = document.getElementById('mobile').value;
+   // let loginToken = document.getElementById('loginToken').value;
 
-  //  check if stored data from register-form is equal to data from login form
-    if(enterUserName == storedName && enetrUserPw == storedPassword){
-      alert('you are successfully Log in')
-    }else{
-      alert('invalid username and password')
-    }
+   let checkFullName = /^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$/;
+   let checkEmail = /^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$/;
+   let checkPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,15}$/;
+   let checkAddress = /^[a-zA-Z0-9\s,'-]*$/;
+   let checkmobileNumber = /^(\+\d{1,3}[- ]?)?\d{10}$/;
+
+   if(checkFullName.test(fullName)){
+      document.getElementById('nameError').innerHTML = '';
+   }else{
+      document.getElementById('nameError').innerHTML = '** Invalid Full Name';
+      return false;
+   }
+
+   if(checkEmail.test(email)){
+      document.getElementById('emailError').innerHTML = '';
+   }else{
+      document.getElementById('emailError').innerHTML = '** Invalid Email';
+      return false;
+   }
+
+   if(checkPassword.test(password)){
+      document.getElementById('passwordError').innerHTML = '';
+   }else{
+      document.getElementById('passwordError').innerHTML = '** Invalid password';
+      return false;
+   }
+
+   if(password.match(cpassword)){
+      document.getElementById('confirmPasswordError').innerHTML = '';
+   }else{
+      document.getElementById('confirmPasswordError').innerHTML = '** Password not Match';
+      return false;
+   }
+   if(checkAddress.test(address)){
+      document.getElementById('addressError').innerHTML = '';
+   }else{
+      document.getElementById('addressError').innerHTML = '** Invalid Address';
+      return false;
+   }
+   if(checkmobileNumber.test(mobileNumber)){
+      document.getElementById('mobileNoError').innerHTML = '';
+   }else{
+      document.getElementById('mobileNoError').innerHTML = '** Invalid Mobile number';
+      return false;
+   }
+
+let  newUserData = {
+   'fullname':fullName,
+   'Email':email,
+   'Password':password,
+   'ConfirmPassword':cpassword,
+   'Address':address,
+   'MobileNumber':mobileNumber,
+   'LoginToken': ''
+};
+let newUserProfileData = JSON.parse(localStorage.getItem('userProfileData'));
+
+
+newUserProfileData.push(newUserData);
+// console.log(newUserProfileData);
+
+localStorage.setItem('userProfileData',JSON.stringify(newUserProfileData));
+
+} //end of function
+
+
+function check(event){
+   event.preventDefault();
+   let myData = JSON.parse(localStorage.getItem('userProfileData'));
+
+   for(let i=0; i <= myData.length; i++){
+
+      var storedUserName = myData[i].Email;
+      var storedUserPass = myData[i].ConfirmPassword;
+   
+// debugger;
+   var enterUserEmail = document.getElementById('useremail').value;
+   var enterUserPassword = document.getElementById('userpassword').value;
+
+   if(enterUserEmail == storedUserName && enterUserPassword == storedUserPass) {
+      console.log('You are loged in.');
+      return false;
+   }
+  
+} 
+debugger;
+   console.log('Incorrect EmailId and Password.');
+   return false;
+
 }
-// localStorage.clear(); 
 
-// regex form validation
 
-function formValidation(){
-  let FullName = document.getElementById('name');
-  let mobile = document.getElementById('mobile');
-  let address = document.getElementById('address');
-  let email = document.getElementById('email');
-  let password = document.getElementById('password');
-  let loginToken = document.getElementById('login_token');
 
-  let FullNameCheck = /^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,2}$/;
-  let mobileCheck = /^(\+\d{1,3}[- ]?)?\d{10}$/;
-  let addressCheck = /^\s*\S+(?:\s+\S+){2}/;
-  let emailCheck = /^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$/;
-  let passwordCheck = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,15}$/;
-  // let loginTokeCheck = 
-
-  if(FullNameCheck.test(FullName)){
-    document.getElementById('errorName').innerHTML = '';
-  }else{
-    document.getElementById('errorName').innerHTML = '** Invalid Username';
-    return false;
-  }
-
-  if(mobileCheck.test(mobile)){
-    document.getElementById('errorMobile').innerHTML = '';
-  }else{
-    document.getElementById('errorMobile').innerHTML = '** Invalid Mobile Number';
-    return false;
-  }
-  if(addressCheck.test(address)){
-    document.getElementById('errorAddress').innerHTML = '';
-  }else{
-    document.getElementById('errorAddress').innerHTML = '** Invali Address';
-    return false;
-  }
-  if(emailCheck.test(email)){
-    document.getElementById('errorEmail').innerHTML = '';
-  }else{
-    document.getElementById('errorEmail').innerHTML = '** Invalid Email Id'
-    return false;
-  }
-  if(passwordCheck.test(password)){
-    document.getElementById('errorPassword').innerHTML = '';
-  }else{
-    document.getElementById('errorPassword').innerHTML = '** Invalid Password'
-    return false;
-  }
+// dispaly and hide login register forms
+document.getElementById('mylinks').onclick = function switchVisible() {
+   document.getElementById('div2').style.display = 'block';
+   document.getElementById('div1').style.display = 'none';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-var $loginMsg = $('.loginMsg'),
-  $login = $('.login'),
-  $signupMsg = $('.signupMsg'),
-  $signup = $('.signup'),
-  $frontbox = $('.frontbox');
-
-$('#switch1').on('click', function() {
-  $loginMsg.toggleClass("visibility");
-  $frontbox.addClass("moving");
-  $signupMsg.toggleClass("visibility");
-
-  $signup.toggleClass('hide');
-  $login.toggleClass('hide');
-})
-
-$('#switch2').on('click', function() {
-  $loginMsg.toggleClass("visibility");
-  $frontbox.removeClass("moving");
-  $signupMsg.toggleClass("visibility");
-
-  $signup.toggleClass('hide');
-  $login.toggleClass('hide');
-})
-
-setTimeout(function(){
-  $('#switch1').click()
-},1000)
-
-setTimeout(function(){
-  $('#switch2').click()
-},3000)
+// localStorage.clear();
