@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/authentication.css">
     <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
 </head>
@@ -74,24 +77,29 @@
                       <span id="confirmPasswordError" class="text-danger font-weight-bold"></span>
                     </div>
                   </div>
-                  <div class="row">
+                  <!-- <div class="row">
                     <div class="col-md-12">
                       <label><b>Address:</b> </label>
                       <input type="text" name="" placeholder="Enter Your Address" id="address" class="" value="">
                       <span id="addressError" class="text-danger font-weight-bold"></span>  
                     </div>
-                  </div>
+                  </div> -->
                   <div class="row">
                     <div class="col-md-6">
                       <label><b>Mobile Number:</b> </label>
                       <input type="text" name="" placeholder="Enter Mobile Number" id="mobile" class="" value="">
                       <span id="mobileNoError" class="text-danger font-weight-bold"></span>
                     </div>
-                    <div class="col-md-6">  
+                    <div class="col-md-6">
+                      <label><b>Address:</b> </label>
+                      <input type="text" name="" placeholder="Enter Your Address" id="address" class="" value="">
+                      <span id="addressError" class="text-danger font-weight-bold"></span>  
+                    </div>
+                    <!-- <div class="col-md-6">  
                       <label><b>Login Token:</b> </label>
                       <input type="text" name="" placeholder="Token" id="loginToken" class="" value="">
                       <span id="loginToken" class="text-danger font-weight-bold"></span>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
                 <button type="submit" class="registerbtn">Register</button>
@@ -103,5 +111,6 @@
           <!-- register form end -->
         </div>
        <script src="js/authentication.js"></script>
+       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>

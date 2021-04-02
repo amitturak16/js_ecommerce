@@ -1,3 +1,23 @@
+let userLogin = false;
+
+window.onload = function(){
+   let readCookie = document.cookie;
+   console.log(readCookie)
+
+   let dataForToken = JSON.parse(localStorage.getItem('userProfileData'));
+   // console.log(dataForToken)
+
+   for(let i = 0; i < dataForToken.length; i++){
+   //   debugger;
+      let loginForToken = dataForToken[i].LoginToken;
+
+      if(readCookie == loginForToken){
+         userLogin = true;
+      }else{
+         userLogin = false;
+      }
+   } //end loop
+} //end function
 
 function validate(){
 
@@ -63,6 +83,13 @@ if(localStorage.getItem('userProfileData') == null){
       return false;
    }
 
+   swal({
+      title: "Thank you! Your registration was successful!",
+      text: "click Ok for confirm your registration",
+      icon: "success",
+      button: "Ok",
+    });
+
 let  newUserData = {
    'fullname':fullName,
    'Email':email,
@@ -70,8 +97,8 @@ let  newUserData = {
    'ConfirmPassword':cpassword,
    'Address':address,
    'MobileNumber':mobileNumber,
-   'LoginToken': ''
-};
+   'LoginToken': random_string
+}; //end of object
 let newUserProfileData = JSON.parse(localStorage.getItem('userProfileData'));
 
 
@@ -80,14 +107,14 @@ newUserProfileData.push(newUserData);
 
 localStorage.setItem('userProfileData',JSON.stringify(newUserProfileData));
 
-} //end of function
+} //end of validate function
 
 
-function check(event){
-   event.preventDefault();
+function check(){
+  
    let myData = JSON.parse(localStorage.getItem('userProfileData'));
 
-   for(let i=0; i <= myData.length; i++){
+   for(let i=0; i < myData.length; i++){
 
       var storedUserName = myData[i].Email;
       var storedUserPass = myData[i].ConfirmPassword;
@@ -97,18 +124,39 @@ function check(event){
    var enterUserPassword = document.getElementById('userpassword').value;
 
    if(enterUserEmail == storedUserName && enterUserPassword == storedUserPass) {
-      console.log('You are loged in.');
-      return false;
-   }
+     
+     
+         // swal({
+         //    title: "Have logged in successfully",
+         //    text: "You clicked the button!",
+         //    icon: "success",
+         //    button: "Ok",
+         //  });
+         //  return false;
+         window.location.replace('index.html')
+         //  document.getElementsByClassName('buy_btn').style.display = 'block';
+      } //end of if
   
-} 
-debugger;
-   console.log('Incorrect EmailId and Password.');
+   } //end for loop
+   swal({
+      title: "Invalid Credentials",
+      text: "Please check the email or Password",
+      icon: "warning",
+      button: "Ok",
+    });
    return false;
+} //end of validate function
 
-}
 
+   var random_string = '';
+   var characters = 'ABSDEFGHIJKLMNOPQRSTUVWXYZ123456789abcdefghijklmnopqrstuvwxyz';
+      for(var i = 0; i < characters.length; i++){
+      random_string += characters.charAt(Math.floor(Math.random() * characters.length))
+   }
+   // console.log(random_string) ;
 
+   document.cookie = 'LoginToken=' + random_string + '; path=/';
+   // console.log(document.cookie)
 
 // dispaly and hide login register forms
 document.getElementById('mylinks').onclick = function switchVisible() {

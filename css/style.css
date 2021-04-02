@@ -121,3 +121,89 @@ div.wpcs_tab {
   .footer .ft1{margin-top: 11px; float: left; color: white; width: 30%;}
   .footer .ft2{margin-top: 20px;text-align: center; font-weight: bold; color: white; float: left; width: 40%;}
   .footer .ft3{margin-top: 11px;float: left; color: white; width: 30%; }
+
+
+ 
+  
+  /* buy btn */
+  .buy_btn  {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 1px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .buy_btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .buy_btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .buy_btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .buy_btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  
+
+  /* cart btn */
+  .cart_btn  {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #007bff;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 1px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .cart_btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .cart_btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .cart_btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .cart_btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+ 

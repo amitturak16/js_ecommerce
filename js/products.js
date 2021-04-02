@@ -14,7 +14,7 @@ const productData = [
     {
         id: 2,
         productCategory: 'fashion',
-        productName: `Mens' Shirts, Digital Printed Half Sleeves Shirts for Men`,
+        productName: `Mens' Shirts, Printed Half Shirts Men`,
         size: 'xxl',
         color: 'red',
         price: 500,
@@ -972,17 +972,16 @@ function drawProducts(){
     var newChild = `<div class="product_img"><img src=`+currentProducts[i].productUrl+` alt=""></div>`;
             parent.insertAdjacentHTML('beforeend', newChild);
             var newChild1 = `<div class="child1">
-
                 <h4>`+currentProducts[i].productName+`</h4>
                 <h6>sizes avilable: `+currentProducts[i].size+`<h6>
                  `+currentProducts[i].color+` in color<br>
                 <h5>₹`+currentProducts[i].price+` Save (15%)<h5>
                 `+currentProducts[i].shippingInformation+`
-                <h1>`+currentProducts[i].reviews+`</h1><br>
+                <h1>`+currentProducts[i].reviews+`</h1>
+                <button class="buy_btn"><span>Buy Now</span></button> <button class="cart_btn"><span>Add to cart </span></button>
                 </div>`;
                 parent.insertAdjacentHTML('beforeend', newChild1)
 
-          
             } //end of loop
     } //end of function
 
